@@ -1,0 +1,22 @@
+title {
+    font-family: Lucida Handwriting, cursive;
+
+}
+
+#Main-Header{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#Head-Time{
+    font-family: Tahoma, serif;
+    position: fixed;
+    font-size: 17px;
+}
+
+#Head-Date{
+    font-family: Tahoma, serif;
+    display: block;
+    font-size: 17px;
+    text-align: right;
+}
