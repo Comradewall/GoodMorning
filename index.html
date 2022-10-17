@@ -3,8 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="author" content="Craciun Mihai">
+        <meta name="viewport" content="width=device-width">
 
-        <link href="/Style/header.css" rel="stylesheet">
+        <link href="/Style/index.css" rel="stylesheet">
         <link href="/Style/tables.css" rel="stylesheet">
         <link rel="icon" href="/Resources/sun.png">
 
@@ -15,15 +16,21 @@
 
     <body>
         <header>
-            <h1 id="Main-Header"></h1>
             <span id="Head-Time"></span>
             <span id="Head-Date"></span>
+            <h1 id="Main-Header"></h1>
         </header>
         <main>
-        <div>
-            <h2>Hello, dear viewer!</h2>
-            <p>This page is a very specialized page created for exactly one individual to get his morning
+        <div style="text-align:center;">
+            <h2 id="SubTitle">Hello, dear viewer!</h2>
+            <p id="Disclaimer">This page is a very specialized page created for exactly one individual to get his morning
             started if you would like you are free to look around.</p>
+        </div>
+        <div>
+            <h3 id="City"></h3>
+            <span id="Temperature"></span>
+            <p id="WeatherDescription"></p>
+            <p id="SecondaryWeatherDesc"></p>
         </div>
         <table>
             <caption>Train Time Table</caption>
@@ -39,12 +46,12 @@
                     <td colspan="3" style="text-align: center;">Trains going to Rm. Valcea</td>
                 </tr>
                     <td>R2074</td>
-                    <td>06:23</td>
+                    <td id="EarlyArrivalPossible">06:23</td>
                     <td>06:44</td>
                 </tr>
                 <tr>
                     <td>R-E2012</td>
-                    <td>09:00</td>
+                    <td id="DelaysPossible">09:00</td>
                     <td>09:18</td>
                 </tr>
                 <tr>
@@ -53,7 +60,7 @@
                 <tr>
                     <td>IR1521</td>
                     <td>14:16</td>
-                    <td>13:56</td>
+                    <td id="DelaysPossible">13:56</td>
                 </tr>
                 <tr>
                     <td>R2437</td>
@@ -63,6 +70,18 @@
                 <tr>
                     <td>R2067</td>
                     <td>16:38</td>
-                    <td>16:13</td>
+                    <td id="DelaysPossible">16:13</td>
                 </tr>
             </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align:left;"><span style="color:rgb(116, 227, 129)">Green</span> - Early Arrivals Possible</td>
+                </tr>
+                <tr>
+                    <td colspan="3" style="text-align:left;"><span style="color:rgb(219, 115, 112)">Red</span> - Delays Possible</td>
+                </tr>
+            </tfoot>
+            </table>
+        </main>
+    </body>
+</html>

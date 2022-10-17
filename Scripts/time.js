@@ -5,7 +5,7 @@ if (time.getHours() < 12){
     document.getElementById("Page-Title").innerHTML = "Good Morning !";
     document.getElementById("Main-Header").innerHTML = "Good Morning !";
 }
-else if (time.getHours() >= 12 && time.getHours() < 18){
+else if (time.getHours() >= 12 && time.getHours() < 19){
     document.getElementById("Page-Title").innerHTML = "Good Afernoon !";
     document.getElementById("Main-Header").innerHTML = "Good Afternoon !";
 }

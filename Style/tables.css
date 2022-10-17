@@ -3,6 +3,8 @@ table {
     border: 2px solid rgb(200,200,200);
     letter-spacing: 1px;
     font-size: 0.8rem;
+    margin: auto;
+    margin-top:60px;
   }
   
   td, th {
@@ -28,4 +30,12 @@ table {
   
   caption {
     padding: 10px;
+    font-size: 17px;
+  }
+
+  #DelaysPossible{
+    background-color: rgb(219, 115, 112);
+  }
+  #EarlyArrivalPossible{
+    background-color: rgb(116, 227, 129);
   }

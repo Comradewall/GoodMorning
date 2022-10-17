@@ -3,6 +3,12 @@ title {
 
 }
 
+header{
+    margin-bottom: 55px;
+}
+
+/* Id's for specific elemnst of the html document.*/
+
 #Main-Header{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
@@ -12,6 +18,7 @@ title {
     font-family: Tahoma, serif;
     position: fixed;
     font-size: 17px;
+    font-style: italic;
 }
 
 #Head-Date{
@@ -19,4 +26,11 @@ title {
     display: block;
     font-size: 17px;
     text-align: right;
+    font-style: italic;
+}
+#SubTitle{
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Disclaimer{
+    font-family: Arial, Helvetica, sans-serif;
 }
