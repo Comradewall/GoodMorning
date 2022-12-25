@@ -1,3 +1,7 @@
+
+/* Stylesheets should be redone according to the book this is duuuumb */
+
+
 title {
     font-family: Lucida Handwriting, cursive;
 
@@ -7,7 +11,7 @@ header{
     margin-bottom: 55px;
 }
 
-/* Id's for specific elemnst of the html document.*/
+/* Id's for specific elements of the html document.*/
 
 #Main-Header{
     font-family: Arial, Helvetica, sans-serif;
@@ -33,4 +37,8 @@ header{
 }
 #Disclaimer{
     font-family: Arial, Helvetica, sans-serif;
+}
+#Gis-frame{
+    width: 1618px;
+    height: 887px;
 }
