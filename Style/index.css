@@ -1,44 +1,69 @@
-
-/* Stylesheets should be redone according to the book this is duuuumb */
-
-
-title {
-    font-family: Lucida Handwriting, cursive;
-
+html{
+    font-family: Arial, Serif, serif;
 }
+
+body{
+    background-color: white;
+}
+/* TODO Fix left right postioning and weather-div position */
+
+/*Bruuh css be clean i swear pffff.*/
 
 header{
-    margin-bottom: 55px;
-}
-
-/* Id's for specific elements of the html document.*/
-
-#Main-Header{
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-}
-
-#Head-Time{
-    font-family: Tahoma, serif;
-    position: fixed;
-    font-size: 17px;
-    font-style: italic;
-}
-
-#Head-Date{
-    font-family: Tahoma, serif;
     display: block;
-    font-size: 17px;
-    text-align: right;
-    font-style: italic;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left:0;
 }
-#SubTitle{
-    font-family: Arial, Helvetica, sans-serif;
+
+footer{
+    position: fixed;
+    background-color: #3388ff;
+    width: 100%;
+    bottom: 0;
+    left:0;
 }
-#Disclaimer{
-    font-family: Arial, Helvetica, sans-serif;
+
+main{
+    position: relative;
 }
+
+.Header-Info {font-style: italic; font-size: 15px; position: fixed;}
+
+.Body-Div{display: block;}
+
+.Webpage-Note{color: #bbbbbb; font-size: 10px;}
+
+#Date-Div{display:block; width: inherit; height: 20px; padding-top: 15px;}
+
+#FooterIntro{display: block; font-weight: bold;}
+
+#Main-Header{text-align: center;}
+
+#Head-Date{display: inline-block; left: 89%;}
+
+#Head-Time{left: 1%}
+
+#Train\ Schedule{
+    position: fixed;
+    display: inline-block;
+    left: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
 #Gis-frame{
-    width: 1618px;
-    height: 887px;
+    position: fixed;
+    right: 50px;
+    width: 450px;
+    height: 600px;
+}
+
+#Main-Div{
+    position: fixed;
+    padding: 0;
+    width: 100%;
+    top: 25%;
+    height: 600px;
 }

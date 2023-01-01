@@ -1,7 +1,7 @@
 
 const options = {
     country: "ro",
-    lang: "ro",                                             //To be modified, maybe....
+    lang: "ro",                                             //TODO Modify and optimize this mess
     units: "metric",
     appid: "e20a26e5732f79de85f35b5c475368e6",
 }
@@ -26,10 +26,10 @@ function processWeatherData(response){
     console.log(WeatherWind);
     console.log(WeatherMain);
     //Implementing the Data
-    document.getElementById("City").innerHTML(cityName);
-    document.getElementById("Temperature").innerHTML(temperature);
-    document.getElementById("WeatherDescription").innerHTML("The current temperature in "+ cityName + "is " + temperature + "degrees Celsius" + "but the tempreture felt is of around" + feel_like + "degrees Celsius");
-    document.getElementById("SecondaryWeatherDesc").innerHTML("")
+    document.getElementById("City").innerHTML = cityName;
+    document.getElementById("Temperature").innerHTML = temperature;
+    document.getElementById("WeatherDescription").innerHTML = "The current temperature in "+ cityName + " is " + temperature + " degrees Celsius " + "but the temperature felt is of around " + feel_like + " degrees Celsius";
+    document.getElementById("SecondaryWeatherDesc").innerHTML = "";
     
 
 }

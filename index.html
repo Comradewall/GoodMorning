@@ -9,31 +9,29 @@
     <link href="/Style/tables.css" rel="stylesheet">
     <link rel="icon" href="/Resources/sun.png">
 
-    <script src="/Scripts/time.js" defer></script>
-    <script src="/Scripts/tables.js"></script>
+    <script src="Scripts/time.js" defer></script>
+    <script src="Scripts/tables.js"></script>
+    <script src="Scripts/weather.js"></script>
 
     <title id="Page-Title"></title>
 </head>
 
 <body>
     <header>
-        <span id="Head-Time"></span>
-        <span id="Head-Date"></span>
+        <div id="Date-Div">
+            <span id="Head-Time" class="Header-Info"></span>
+            <span id="Head-Date" class="Header-Info"></span>
+        </div>
         <h1 id="Main-Header"></h1>
     </header>
     <main>
-        <div style="text-align:center;">
-            <h2 id="SubTitle">Hello, dear viewer!</h2>
-            <p id="Disclaimer">This page is a very specialized page created for exactly one individual to get his morning
-            started if you would like you are free to look around.</p>
-        </div>
-        <div>
+        <div id="Weather-Div" class="Body-Div">
             <h3 id="City"></h3>
             <span id="Temperature"></span>
             <p id="WeatherDescription"></p>
             <p id="SecondaryWeatherDesc"></p>
         </div>
-        <div id="Main-Div">
+        <div id="Main-Div" class="Body-Div">
             <table id="Train Schedule">
                 <caption>Train Time Table</caption>
                 <thead>
@@ -46,7 +44,7 @@
                 <tbody>
                 <tr>
                     <td colspan="3" style="text-align: center;">Trains going to Rm. Valcea</td>
-                </tr>>
+                </tr>
                 <tr>
                     <td id="train-cell1"></td>
                     <td class="EarlyArrivalPossible" id="time1"></td>
@@ -88,5 +86,12 @@
             <iframe src="GisMap/index.html" id="Gis-frame" ></iframe>
         </div>
     </main>
+    <footer>
+        <div>
+            <span id="FooterIntro">Hello, dear viewer!</span>
+            <span id="Disclaimer" class="Webpage-Note">This page is a very specialized page created for exactly one individual to get his morning
+                started if you would like you are free to look around.</span>
+        </div>
+    </footer>
 </body>
 </html>
